@@ -30,19 +30,20 @@
     div.text_cell_render h4,
     div.text_cell_render h5 {
         font-family: palatino, Constantia, "Hoefler Text", georgia, times new roman, Times, serif;
+        line-height: 125%;
     }
 
     div.text_cell_render h1 {
-        font-size:2em; 
-        color:#959ea1;
+        font-size:1.85em; 
+        color:#595959;
         border-bottom: 1px solid #EEE;    
     }
 
-    div.text_cell_render h2 {font-size:1.75em; margin-bottom:1em;color:#959ea1;}
-    div.text_cell_render h3 {font-size:1.5em; margin-bottom:1em;color:#959ea1;}
-    div.text_cell_render h4 {font-size:1.167em; margin-bottom:0.867em; text-transform:uppercase;color:#959ea1;}
-    div.text_cell_render h5 {font-size:1.167em; margin-bottom:0.867em; text-transform:uppercase; color:#999;}
-    div.text_cell_render h6 {font-size:1.167em; margin-bottom:0.867em; text-transform:uppercase; color:#ccc;}
+    div.text_cell_render h2 {font-size:1.65em; margin-bottom:1em;color:#7E7E7E;}
+    div.text_cell_render h3 {font-size:1.45em; margin-bottom:1em;color:#7E7E7E;}
+    div.text_cell_render h4 {font-size:1.25em; margin-bottom:0.867em; text-transform:uppercase;color:#7E7E7E;}
+    div.text_cell_render h5 {font-size:1.15em; margin-bottom:0.867em; text-transform:uppercase; color:#999;}
+    div.text_cell_render h6 {font-size:1.15em; margin-bottom:0.867em; text-transform:uppercase; color:#ccc;}
 
 
 /* LINK STYLING */
@@ -60,25 +61,40 @@
 
 /* CELL STYLING */
     div.cell{
-        width:800px;
-        margin-left:16% !important;
+        width:90ex;
+        margin-left:auto;
         margin-right:auto;
     }
 
 
     div.text_cell_render{
         font-family: palatino, Constantia, "Hoefler Text", georgia, times new roman, Times, serif;
-        line-height: 135%;
-        font-size: 120%;
-        width:800px;
+        line-height: 125%;
+        font-size: 110%;
+        width:90ex;
         margin-left:auto;
         margin-right:auto;
     }
 
+    div.text_cell_render ul,
+    div.text_cell_render li,
+    div.text_cell_render ol {
+        margin-top: 1.5ex;
+        padding-bottom: 0.5ex;
+    }
+    
+
+    div.cell.code_cell {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
 /* CODE CELL STYLING */    
     .CodeMirror{
-            font-family: "Inconsolata","Source Code Pro", source-code-pro,Consolas, monospace;
-            background:#FCFCFC;
+        font-family: "Inconsolata","Source Code Pro", source-code-pro,Consolas, monospace;
+        background:#FCFCFC;
     }
 
     .cm-s-ipython span.cm-variable{color:#000}
@@ -91,9 +107,7 @@
     .cm-s-ipython span.cm-operator{color:#660066;font-weight:bold}
     .cm-s-ipython span.cm-meta{color:#DB704D;}
 
-    div.cell.code_cell {
-    margin: 10px 0 10px 0;
-    }
+
 
 /* MISC */
     .prompt{
