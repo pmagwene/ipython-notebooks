@@ -134,7 +134,7 @@
 <script>
     MathJax.Hub.Config({
                         TeX: {
-                           extensions: ["AMSmath.js", "AMSsymbols.js", "mhchem.js"]
+                           extensions: ["AMSmath.js", "AMSsymbols.js", "mhchem.js"],
                            Macros:{
                             Mtx: ["{\\mathbf#1}",1]
                            }
