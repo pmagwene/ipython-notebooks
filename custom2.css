@@ -61,7 +61,7 @@
 
 /* CELL STYLING */
     div.cell{
-        /*width:95ex;*/
+        width:95ex;
         margin-left:auto;
         margin-right:auto;
     }
@@ -71,7 +71,7 @@
         font-family: palatino, Constantia, "Hoefler Text", georgia, times new roman, Times, serif;
         line-height: 125%;
         font-size: 110%;
-        /*width:90ex;*/
+        width:90ex;
         margin-left:auto;
         margin-right:auto;
     }
@@ -92,8 +92,9 @@
     div.cell.code_cell {
         margin-top: 10px;
         margin-bottom: 10px;
-        margin-left: auto;
+        margin-left: 10ex;
         margin-right: auto;
+        width:80ex;
     }    
 
     div.output_text pre{
@@ -104,7 +105,7 @@
     .cm-s-ipython span.cm-variable{color:#000}
     .cm-s-ipython span.cm-keyword{color:#A35200;font-weight:bold}
     .cm-s-ipython span.cm-number{color:#2E2EE6}
-    .cm-s-ipython span.cm-comment{color:#E6CC80;font-style:italic}
+    .cm-s-ipython span.cm-comment{color:#775f17;font-style:italic}
     .cm-s-ipython span.cm-string{color:#E68A00}
     .cm-s-ipython span.cm-builtin{color:#008000;font-weight:bold}
     .cm-s-ipython span.cm-error{color:#f00}
