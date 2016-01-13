@@ -1,0 +1,157 @@
+<style>
+
+/* FONTS */
+    @font-face {
+        font-family: "Computer Modern";
+        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunss.otf');
+    }
+    @font-face {
+        font-family: "Computer Modern";
+        font-weight: bold;
+        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunsx.otf');
+    }
+    @font-face {
+        font-family: "Computer Modern";
+        font-style: oblique;
+        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunsi.otf');
+    }
+    @font-face {
+        font-family: "Computer Modern";
+        font-weight: bold;
+        font-style: oblique;
+        src: url('http://9dbb143991406a7c655e-aa5fcb0a5a4ec34cff238a2d56ca4144.r56.cf5.rackcdn.com/cmunso.otf');
+    }
+
+
+/* HEADER STYLING */
+    div.text_cell_render h1, 
+    div.text_cell_render h2, 
+    div.text_cell_render h3, 
+    div.text_cell_render h4,
+    div.text_cell_render h5 {
+        font-family: palatino, Constantia, "Hoefler Text", georgia, times new roman, Times, serif;
+        line-height: 125%;
+    }
+
+    div.text_cell_render h1 {
+        font-size:1.85em; 
+        color:#595959;
+        border-bottom: 1px solid #EEE;    
+    }
+
+    div.text_cell_render h2 {font-size:1.65em; margin-bottom:1em;color:#7E7E7E;}
+    div.text_cell_render h3 {font-size:1.45em; margin-bottom:1em;color:#7E7E7E;}
+    div.text_cell_render h4 {font-size:1.1em; margin-bottom:0.867em; text-transform:uppercase;color:#7E7E7E;}
+    div.text_cell_render h5 {font-size:1.05em; margin-bottom:0.867em; text-transform:uppercase; color:#999;}
+    div.text_cell_render h6 {font-size:1.0em; margin-bottom:0.867em; text-transform:uppercase; color:#ccc;}
+
+
+/* LINK STYLING */
+    div.cell a:link, a:visited {
+        color:#ff8a00; 
+    }
+    div.cell a:hover {
+        color:#feb925;
+    }
+
+    div.cell a:link {
+        text-decoration:none;
+    }
+
+
+/* CELL STYLING */
+    div.cell{
+        width:95ex;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    div.text_cell_render{
+        font-family: palatino, Constantia, "Hoefler Text", georgia, times new roman, Times, serif;
+        line-height: 125%;
+        font-size: 110%;
+        width:90ex;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .rendered_html pre, code{
+        font-family: "Inconsolata","Source Code Pro", source-code-pro,Consolas, monospace;
+    }
+
+
+    div.text_cell_render ul,
+    div.text_cell_render li,
+    div.text_cell_render ol {
+        margin-top: 1.5ex;
+        margin-bottom: 0.5ex;
+    }
+    
+
+    div.cell.code_cell {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    div.output_text pre{
+        font-family: "Inconsolata","Source Code Pro", source-code-pro,Consolas, monospace;
+        background:#FBF9F6;
+    }    
+
+/* CODE CELL STYLING */    
+    .CodeMirror{
+        font-family: "Inconsolata","Source Code Pro", source-code-pro,Consolas, monospace;
+        background:#FCFCFC;
+    }
+
+    .cm-s-ipython span.cm-variable{color:#000}
+    .cm-s-ipython span.cm-keyword{color:#A35200;font-weight:bold}
+    .cm-s-ipython span.cm-number{color:#2E2EE6}
+    .cm-s-ipython span.cm-comment{color:#E6CC80;font-style:italic}
+    .cm-s-ipython span.cm-string{color:#E68A00}
+    .cm-s-ipython span.cm-builtin{color:#008000;font-weight:bold}
+    .cm-s-ipython span.cm-error{color:#f00}
+    .cm-s-ipython span.cm-operator{color:#660066;font-weight:bold}
+    .cm-s-ipython span.cm-meta{color:#DB704D;}
+
+.cm-s-ipython.CodeMirror {background: #ffffff; color: #323537;}
+.cm-s-ipython div.CodeMirror-selected {background: #c3c3c3 !important;}
+.cm-s-ipython .CodeMirror-gutters {background: #ffffff; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: #838184;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #5f5a60 !important;}
+
+
+
+/* MISC */
+    .prompt{
+        display: None;
+    }
+    
+    .warning{
+        color: rgb( 240, 20, 20 )
+    }
+
+
+</style>
+
+<script>
+    MathJax.Hub.Config({
+                        TeX: {
+                           extensions: ["AMSmath.js", "AMSsymbols.js", "mhchem.js"],
+                           Macros:{
+                            Mtx: ["{\\mathbf#1}",1]
+                           }
+                           },
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+                },
+                displayAlign: 'center', // Change this to 'center' to center equations.
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 4}}
+                }
+        });
+</script>
