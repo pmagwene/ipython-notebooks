@@ -58,7 +58,7 @@
         text-decoration:none;
     }
 
-
+/*
 /* CELL STYLING */
     div.cell{
         width:95ex;
@@ -191,7 +191,7 @@ div.output_stderr pre {color: #c3c3c3;}
 .cm-s-ipython span.cm-link {color: #9b859d;}
 
 .cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #323537 !important;}
-
+*/
 </style>
 
 <script>
