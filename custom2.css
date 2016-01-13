@@ -123,6 +123,8 @@
 .cm-s-ipython .CodeMirror-linenumber {color: #838184;}
 .cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #5f5a60 !important;}
 
+div.input_prompt {color: #9b859d;}
+div.output_prompt {color: #9b703f;}
 
 
 /* MISC */
